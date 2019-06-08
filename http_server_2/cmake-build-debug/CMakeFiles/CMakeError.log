@@ -1,0 +1,35 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_86251/fast 
+/usr/bin/make -f CMakeFiles/cmTC_86251.dir/build.make CMakeFiles/cmTC_86251.dir/build
+make[1]: Entering directory '/home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86251.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_86251.dir/CheckSymbolExists.c.o   -c /home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_86251
+/home/adrianb3/Downloads/clion-2019.1.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86251.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_86251.dir/CheckSymbolExists.c.o  -o cmTC_86251 
+CMakeFiles/cmTC_86251.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_86251.dir/build.make:86: recipe for target 'cmTC_86251' failed
+make[1]: *** [cmTC_86251] Error 1
+make[1]: Leaving directory '/home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_86251/fast' failed
+make: *** [cmTC_86251/fast] Error 2
+
+File /home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

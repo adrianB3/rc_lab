@@ -23,10 +23,9 @@ request_data parse_request(char * request){
 
     char * lineptr = strtok(request, "\n");
 
-    while(lineptr != NULL){
-        // printf("'%s';", lineptr);
-        lineptr = strtok(NULL, "\n");
-    }
+    printf("%s", lineptr);
+
+    
 
     return req_d;
 }
@@ -62,7 +61,7 @@ int main(int argc, char *argv[]){
     }
 
     while(1){
-        printf("\n+++++++ Waiting for new connection ++++++++\n\n");
+        printf("\n+++++++ Waiting for new connection ++++++++\n");
         if((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen)) < 0){
             perror("Init accept");
             exit(EXIT_FAILURE);

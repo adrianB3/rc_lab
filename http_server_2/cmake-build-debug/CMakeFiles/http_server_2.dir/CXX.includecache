@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/adrianb3/dev/rc_lab/http_server_2/Request.h
+string
+-
+
+/home/adrianb3/dev/rc_lab/http_server_2/RequestHandler.cpp
+RequestHandler.h
+/home/adrianb3/dev/rc_lab/http_server_2/RequestHandler.h
+iostream
+-
+
+/home/adrianb3/dev/rc_lab/http_server_2/RequestHandler.h
+Request.h
+/home/adrianb3/dev/rc_lab/http_server_2/Request.h
+vector
+-
+
