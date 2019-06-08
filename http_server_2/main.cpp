@@ -11,6 +11,7 @@
 #include <arpa/inet.h>
 #include <cstring>
 #include "RequestHandler.h"
+#include "ResponseHandler.h"
 
 class server {
 private:
@@ -75,13 +76,15 @@ public:
         printf("Client port : %u\n", clientPort);
 
         while( count = read(clientSocket, buf, 2047) > 0 ) {
-            //printf("%s\n", buf);
-            //printf("Server sending it back\n");
+
             RequestHandler reqh;
+            ResponseHandler resh;
 
-            Request rq = reqh.parseRequest(std::string(buf));
+            Request req = reqh.parseRequest(std::string(buf));
+            std::string res = resh.getResponse(req);
 
-            //write(clientSocket, buf, strlen(buf));
+            write(clientSocket, res.c_str(), sizeof(char)*res.size());
+
             close(clientSocket);
         }
     }

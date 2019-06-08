@@ -70,22 +70,9 @@ CMakeFiles/http_server_2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server_2.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrianb3/dev/rc_lab/http_server_2/main.cpp -o CMakeFiles/http_server_2.dir/main.cpp.s
 
-CMakeFiles/http_server_2.dir/Request.cpp.o: CMakeFiles/http_server_2.dir/flags.make
-CMakeFiles/http_server_2.dir/Request.cpp.o: ../Request.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/http_server_2.dir/Request.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server_2.dir/Request.cpp.o -c /home/adrianb3/dev/rc_lab/http_server_2/Request.cpp
-
-CMakeFiles/http_server_2.dir/Request.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server_2.dir/Request.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrianb3/dev/rc_lab/http_server_2/Request.cpp > CMakeFiles/http_server_2.dir/Request.cpp.i
-
-CMakeFiles/http_server_2.dir/Request.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server_2.dir/Request.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrianb3/dev/rc_lab/http_server_2/Request.cpp -o CMakeFiles/http_server_2.dir/Request.cpp.s
-
 CMakeFiles/http_server_2.dir/RequestHandler.cpp.o: CMakeFiles/http_server_2.dir/flags.make
 CMakeFiles/http_server_2.dir/RequestHandler.cpp.o: ../RequestHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/http_server_2.dir/RequestHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/http_server_2.dir/RequestHandler.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server_2.dir/RequestHandler.cpp.o -c /home/adrianb3/dev/rc_lab/http_server_2/RequestHandler.cpp
 
 CMakeFiles/http_server_2.dir/RequestHandler.cpp.i: cmake_force
@@ -96,18 +83,31 @@ CMakeFiles/http_server_2.dir/RequestHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server_2.dir/RequestHandler.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrianb3/dev/rc_lab/http_server_2/RequestHandler.cpp -o CMakeFiles/http_server_2.dir/RequestHandler.cpp.s
 
+CMakeFiles/http_server_2.dir/ResponseHandler.cpp.o: CMakeFiles/http_server_2.dir/flags.make
+CMakeFiles/http_server_2.dir/ResponseHandler.cpp.o: ../ResponseHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/http_server_2.dir/ResponseHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server_2.dir/ResponseHandler.cpp.o -c /home/adrianb3/dev/rc_lab/http_server_2/ResponseHandler.cpp
+
+CMakeFiles/http_server_2.dir/ResponseHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server_2.dir/ResponseHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrianb3/dev/rc_lab/http_server_2/ResponseHandler.cpp > CMakeFiles/http_server_2.dir/ResponseHandler.cpp.i
+
+CMakeFiles/http_server_2.dir/ResponseHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server_2.dir/ResponseHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrianb3/dev/rc_lab/http_server_2/ResponseHandler.cpp -o CMakeFiles/http_server_2.dir/ResponseHandler.cpp.s
+
 # Object files for target http_server_2
 http_server_2_OBJECTS = \
 "CMakeFiles/http_server_2.dir/main.cpp.o" \
-"CMakeFiles/http_server_2.dir/Request.cpp.o" \
-"CMakeFiles/http_server_2.dir/RequestHandler.cpp.o"
+"CMakeFiles/http_server_2.dir/RequestHandler.cpp.o" \
+"CMakeFiles/http_server_2.dir/ResponseHandler.cpp.o"
 
 # External object files for target http_server_2
 http_server_2_EXTERNAL_OBJECTS =
 
 http_server_2: CMakeFiles/http_server_2.dir/main.cpp.o
-http_server_2: CMakeFiles/http_server_2.dir/Request.cpp.o
 http_server_2: CMakeFiles/http_server_2.dir/RequestHandler.cpp.o
+http_server_2: CMakeFiles/http_server_2.dir/ResponseHandler.cpp.o
 http_server_2: CMakeFiles/http_server_2.dir/build.make
 http_server_2: CMakeFiles/http_server_2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrianb3/dev/rc_lab/http_server_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable http_server_2"

@@ -9,6 +9,7 @@ Request RequestHandler::parseRequest(std::string raw_req) {
 
     reqToReturn.setReqVerb(lineThatICareAbout[0]);
     reqToReturn.setReqFile(lineThatICareAbout[1]);
+    reqToReturn.setReqProto(lineThatICareAbout[2]);
 
     return reqToReturn;
 }

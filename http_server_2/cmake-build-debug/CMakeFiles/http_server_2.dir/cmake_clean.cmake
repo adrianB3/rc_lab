@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/http_server_2.dir/main.cpp.o"
-  "CMakeFiles/http_server_2.dir/Request.cpp.o"
   "CMakeFiles/http_server_2.dir/RequestHandler.cpp.o"
+  "CMakeFiles/http_server_2.dir/ResponseHandler.cpp.o"
   "http_server_2.pdb"
   "http_server_2"
 )

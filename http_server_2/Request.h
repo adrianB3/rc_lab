@@ -11,8 +11,12 @@ class Request {
 private:
     std::string req_verb;
     std::string req_file;
+    std::string req_proto;
 public:
-    Request(const std::string &reqVerb, const std::string &reqFile) : req_verb(reqVerb), req_file(reqFile) {}
+    Request(const std::string &reqVerb, const std::string &reqFile, const std::string &reqProto) : req_verb(reqVerb),
+                                                                                                   req_file(reqFile),
+                                                                                                   req_proto(reqProto) {}
+
     Request() {}
 
     const std::string &getReqVerb() const {
@@ -29,6 +33,14 @@ public:
 
     void setReqFile(const std::string &reqFile) {
         req_file = reqFile;
+    }
+
+    const std::string &getReqProto() const {
+        return req_proto;
+    }
+
+    void setReqProto(const std::string &reqProto) {
+        req_proto = reqProto;
     }
 };
 

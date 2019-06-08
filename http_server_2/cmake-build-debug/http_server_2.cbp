@@ -84,9 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/adrianb3/dev/rc_lab/http_server_2/Request.cpp">
-			<Option target="http_server_2"/>
-		</Unit>
 		<Unit filename="/home/adrianb3/dev/rc_lab/http_server_2/Request.h">
 			<Option target="http_server_2"/>
 		</Unit>
@@ -94,6 +91,12 @@
 			<Option target="http_server_2"/>
 		</Unit>
 		<Unit filename="/home/adrianb3/dev/rc_lab/http_server_2/RequestHandler.h">
+			<Option target="http_server_2"/>
+		</Unit>
+		<Unit filename="/home/adrianb3/dev/rc_lab/http_server_2/ResponseHandler.cpp">
+			<Option target="http_server_2"/>
+		</Unit>
+		<Unit filename="/home/adrianb3/dev/rc_lab/http_server_2/ResponseHandler.h">
 			<Option target="http_server_2"/>
 		</Unit>
 		<Unit filename="/home/adrianb3/dev/rc_lab/http_server_2/main.cpp">

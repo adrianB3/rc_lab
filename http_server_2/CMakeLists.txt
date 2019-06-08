@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 11)
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 
-add_executable(http_server_2 main.cpp Request.cpp Request.h RequestHandler.cpp RequestHandler.h)
+add_executable(http_server_2 main.cpp Request.h RequestHandler.cpp RequestHandler.h ResponseHandler.cpp ResponseHandler.h)
 
 target_link_libraries(http_server_2 Threads::Threads)

@@ -123,33 +123,6 @@ http_server_2/fast:
 	$(MAKE) -f CMakeFiles/http_server_2.dir/build.make CMakeFiles/http_server_2.dir/build
 .PHONY : http_server_2/fast
 
-Request.o: Request.cpp.o
-
-.PHONY : Request.o
-
-# target to build an object file
-Request.cpp.o:
-	$(MAKE) -f CMakeFiles/http_server_2.dir/build.make CMakeFiles/http_server_2.dir/Request.cpp.o
-.PHONY : Request.cpp.o
-
-Request.i: Request.cpp.i
-
-.PHONY : Request.i
-
-# target to preprocess a source file
-Request.cpp.i:
-	$(MAKE) -f CMakeFiles/http_server_2.dir/build.make CMakeFiles/http_server_2.dir/Request.cpp.i
-.PHONY : Request.cpp.i
-
-Request.s: Request.cpp.s
-
-.PHONY : Request.s
-
-# target to generate assembly for a file
-Request.cpp.s:
-	$(MAKE) -f CMakeFiles/http_server_2.dir/build.make CMakeFiles/http_server_2.dir/Request.cpp.s
-.PHONY : Request.cpp.s
-
 RequestHandler.o: RequestHandler.cpp.o
 
 .PHONY : RequestHandler.o
@@ -176,6 +149,33 @@ RequestHandler.s: RequestHandler.cpp.s
 RequestHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/http_server_2.dir/build.make CMakeFiles/http_server_2.dir/RequestHandler.cpp.s
 .PHONY : RequestHandler.cpp.s
+
+ResponseHandler.o: ResponseHandler.cpp.o
+
+.PHONY : ResponseHandler.o
+
+# target to build an object file
+ResponseHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/http_server_2.dir/build.make CMakeFiles/http_server_2.dir/ResponseHandler.cpp.o
+.PHONY : ResponseHandler.cpp.o
+
+ResponseHandler.i: ResponseHandler.cpp.i
+
+.PHONY : ResponseHandler.i
+
+# target to preprocess a source file
+ResponseHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/http_server_2.dir/build.make CMakeFiles/http_server_2.dir/ResponseHandler.cpp.i
+.PHONY : ResponseHandler.cpp.i
+
+ResponseHandler.s: ResponseHandler.cpp.s
+
+.PHONY : ResponseHandler.s
+
+# target to generate assembly for a file
+ResponseHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/http_server_2.dir/build.make CMakeFiles/http_server_2.dir/ResponseHandler.cpp.s
+.PHONY : ResponseHandler.cpp.s
 
 main.o: main.cpp.o
 
@@ -213,12 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... http_server_2"
 	@echo "... edit_cache"
-	@echo "... Request.o"
-	@echo "... Request.i"
-	@echo "... Request.s"
 	@echo "... RequestHandler.o"
 	@echo "... RequestHandler.i"
 	@echo "... RequestHandler.s"
+	@echo "... ResponseHandler.o"
+	@echo "... ResponseHandler.i"
+	@echo "... ResponseHandler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
