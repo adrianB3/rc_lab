@@ -3,7 +3,7 @@
 
 Request RequestHandler::parseRequest(std::string raw_req) {
     Request reqToReturn;
-
+    std::cout << raw_req << std::endl;
     std::vector<std::string> lines = split(raw_req, "\n");
     std::vector<std::string> lineThatICareAbout = split(lines[0], " ");
 

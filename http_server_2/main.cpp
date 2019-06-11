@@ -31,8 +31,8 @@ public:
 
         bzero((char *) &serverAddr, sizeof(serverAddr));
         this->serverAddr.sin_family = AF_INET; // Address family is Internet
-        this->serverAddr.sin_port = htons(this->port);
-        this->serverAddr.sin_addr.s_addr = INADDR_ANY;
+        this->serverAddr.sin_port = htons(this->port); // host to network short address(16bit)
+        this->serverAddr.sin_addr.s_addr = INADDR_ANY; // any client address accepted
 
         if(bind(serverSocket, (struct sockaddr *) &this->serverAddr, sizeof(this->serverAddr)) < 0){
             perror("Error binding");

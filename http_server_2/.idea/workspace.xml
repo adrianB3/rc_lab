@@ -12,24 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198a90be-a004-4b8c-8bf3-9c8a8d81e3f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ResponseHandler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Request.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ResponseHandler.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Request.h" beforeDir="false" afterPath="$PROJECT_DIR$/Request.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RequestHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RequestHandler.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/http_server_2.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/http_server_2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/http_server_2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/http_server_2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/http_server_2.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RequestHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/RequestHandler.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="571">
+              <caret line="85" column="70" lean-forward="true" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -58,32 +46,23 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Request.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RequestHandler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RequestHandler.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-              <folding>
-                <element signature="e#41#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ResponseHandler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#41#59#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -91,10 +70,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="135">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
-                <element signature="e#165#189#0" expanded="true" />
+                <element signature="e#206#226#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,11 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ResponseHandler.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="47" />
-              <folding>
-                <element signature="e#123#140#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -115,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RequestHandler.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="180">
+              <caret line="12" column="92" lean-forward="true" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
               <folding>
                 <element signature="e#121#141#0" expanded="true" />
               </folding>
@@ -140,13 +116,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/RequestHandler.h" />
         <option value="$PROJECT_DIR$/ResponseHandler.h" />
-        <option value="$PROJECT_DIR$/Request.h" />
-        <option value="$PROJECT_DIR$/RequestHandler.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/ResponseHandler.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Request.h" />
+        <option value="$PROJECT_DIR$/RequestHandler.h" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/RequestHandler.cpp" />
       </list>
     </option>
   </component>
@@ -164,6 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,7 +157,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,30 +197,31 @@
       <workItem from="1558115769910" duration="6371000" />
       <workItem from="1559573943092" duration="2225000" />
       <workItem from="1559983090759" duration="5489000" />
-      <workItem from="1560011053482" duration="8173000" />
+      <workItem from="1560011053482" duration="8240000" />
+      <workItem from="1560261040333" duration="4362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22258000" />
+    <option name="totallyTimeSpent" value="26687000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="25" width="1303" height="743" extended-state="6" />
+    <frame x="57" y="25" width="1863" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21320605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21574023" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18729642" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18358532" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23289903" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3257329" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.325054" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.44708425" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32937366" />
@@ -265,30 +242,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Request.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequestHandler.h">
+    <entry file="file://$PROJECT_DIR$/Request.cpp" />
+    <entry file="file:///usr/include/netinet/in.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#121#141#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="311">
+          <caret line="240" column="27" selection-start-line="240" selection-start-column="19" selection-end-line="240" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Request.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="571">
+          <caret line="85" column="70" lean-forward="true" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -297,40 +265,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#165#189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ResponseHandler.h">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="47" />
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
-            <element signature="e#123#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequestHandler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding>
-            <element signature="e#41#68#0" expanded="true" />
+            <element signature="e#206#226#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ResponseHandler.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="270">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ResponseHandler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RequestHandler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="92" lean-forward="true" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
           <folding>
-            <element signature="e#41#59#0" expanded="true" />
+            <element signature="e#121#141#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RequestHandler.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
