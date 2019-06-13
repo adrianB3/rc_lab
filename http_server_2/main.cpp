@@ -66,14 +66,14 @@ public:
         printf("Created thread: %d\n", int(id));
         printf("Connected with sock id: %d\n", clientSocket);
 
-        bzero(&client_addr, sizeof(client_addr));
-
-        getsockname(clientSocket, (struct sockaddr *) &client_addr, reinterpret_cast<socklen_t *>(sizeof(client_addr)));
-        inet_ntop(AF_INET, &client_addr.sin_addr, clientIP, sizeof(clientIP));
-        clientPort = ntohs(client_addr.sin_port);
-
-        printf("Client ip address: %s\n", clientIP);
-        printf("Client port : %u\n", clientPort);
+//        bzero(&client_addr, sizeof(client_addr));
+//
+//        getsockname(clientSocket, (struct sockaddr *) &client_addr, reinterpret_cast<socklen_t *>(sizeof(client_addr)));
+//        inet_ntop(AF_INET, &client_addr.sin_addr, clientIP, sizeof(clientIP));
+//        clientPort = ntohs(client_addr.sin_port);
+//
+//        printf("Client ip address: %s\n", clientIP);
+//        printf("Client port : %u\n", clientPort);
 
         while( count = read(clientSocket, buf, 2047) > 0 ) {
 

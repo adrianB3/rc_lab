@@ -6,10 +6,12 @@ Request RequestHandler::parseRequest(std::string raw_req) {
     std::cout << raw_req << std::endl;
     std::vector<std::string> lines = split(raw_req, "\n");
     std::vector<std::string> lineThatICareAbout = split(lines[0], " ");
+    std::vector<std::string> anotherLineThatICareAbout = split(lines[3], " ");
 
     reqToReturn.setReqVerb(lineThatICareAbout[0]);
     reqToReturn.setReqFile(lineThatICareAbout[1]);
     reqToReturn.setReqProto(lineThatICareAbout[2]);
+    reqToReturn.setReqAccType(anotherLineThatICareAbout[1]);
 
     return reqToReturn;
 }

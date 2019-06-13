@@ -1,4 +1,5 @@
 #include <fstream>
+#include <algorithm>
 #include "ResponseHandler.h"
 
 const std::string badreq = "400 Bad Request";
@@ -30,7 +31,7 @@ std::string ResponseHandler::getResponse(Request req){
         file.erase(0, 1); // delete the "/"
 
         std::ifstream filestream;
-        filestream.open("../public/" + file);
+        filestream.open("../public/" + file, std::ios::binary);
 
         if (!filestream.is_open()){
             body += "Not Found";
@@ -39,16 +40,33 @@ std::string ResponseHandler::getResponse(Request req){
             header += "Content-Length: " + std::to_string(body.length()) + "\n";
         }
         else{
-            std::string line;
-            while ( getline (filestream,line) )
-            {
-                body += line;
+
+            if(req.getReqAccType().find("image") != std::string::npos){
+
+               // body = std::string(filestream.rdbuf());
+                body.assign( (std::istreambuf_iterator<char>(filestream) ),
+                                     (std::istreambuf_iterator<char>()) );
+
+                header += proto + " " + success + "\n";
+                header += "Content-Type: " + req.getReqAccType() + "\n";
+                header += "Content-Length: " + std::to_string(body.length()) + "\n";
+            }
+            else {
+                std::string line;
+                while ( getline (filestream,line) )
+                {
+                    body += line;
+                }
+                header += proto + " " + success + "\n";
+                if(req.getReqFile().find("js") != std::string::npos){
+                    header += "Content-Type: text/javascript; charset=utf-8\n";
+                }
+                else {
+                    header += "Content-Type: text/html; charset=utf-8\n";
+                }
+                header += "Content-Length: " + std::to_string(body.length()) + "\n";
             }
             filestream.close();
-
-            header += proto + " " + success + "\n";
-            header += "Content-Type: text/html; charset=utf-8\n";
-            header += "Content-Length: " + std::to_string(body.length()) + "\n";
         }
     }
 

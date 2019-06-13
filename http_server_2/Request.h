@@ -8,12 +8,12 @@ private:
     std::string req_verb;
     std::string req_file;
     std::string req_proto;
+    std::string req_acc_type;
 public:
-    Request(const std::string &reqVerb, const std::string &reqFile, const std::string &reqProto) : req_verb(reqVerb),
-                                                                                                   req_file(reqFile),
-                                                                                                   req_proto(reqProto) {}
-
-    Request() {}
+    Request(const std::string &reqVerb, const std::string &reqFile, const std::string &reqProto,
+            const std::string &reqAccType) : req_verb(reqVerb), req_file(reqFile), req_proto(reqProto),
+                                             req_acc_type(reqAccType) {}
+    Request(){}
 
     const std::string &getReqVerb() const {
         return req_verb;
@@ -37,6 +37,14 @@ public:
 
     void setReqProto(const std::string &reqProto) {
         req_proto = reqProto;
+    }
+
+    const std::string &getReqAccType() const {
+        return req_acc_type;
+    }
+
+    void setReqAccType(const std::string &reqAccType) {
+        req_acc_type = reqAccType;
     }
 };
 
